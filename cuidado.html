@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan &amp; Care — Eco Reset</title>
+<meta name="description" content="Scan &amp; Care: la guía digital de Eco Reset para reconocer síntomas comunes en tus plantas, revisar las condiciones de cultivo y preparar la mezcla correcta.">
+<meta name="theme-color" content="#F7F5EC">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ecoReady)document.documentElement.classList.remove('js');},4000);</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="care-page">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c0 8-4.5 13-11 13H5c0-8 4.5-13 11-13h4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M4 21c1.5-6 5-10 10-13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c0 4 5 6.5 5 10.5A5 5 0 0 1 7 13.5C7 9.5 12 7 12 3Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-spray" viewBox="0 0 24 24"><path d="M9 8h6v13H9zM9 8V5h6v3M15 10h3M15 14h4M15 18h3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm4.6 12.6c-.2.5-1.1 1-1.6 1-.4 0-1.5-.1-3.4-1.4-1.6-1.2-2.6-3-2.7-3.3-.1-.3-.5-1.2-.2-1.8.2-.5.6-.7.8-.8l.6-.1c.2 0 .4 0 .5.3l.7 1.7c.1.2 0 .4-.1.5l-.4.5c-.1.1-.2.3-.1.5.2.3.6.9 1.2 1.4.7.6 1.2.8 1.4.9.2.1.4 0 .5-.1l.6-.6c.2-.2.4-.2.6-.1l1.4.7c.2.1.3.3.3.5 0 .2 0 .8-.2 1.3Z" fill="currentColor"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v2.2c.8 1.6 2.1 2.5 3.7 2.7v2.6c-1.4 0-2.7-.4-3.8-1.2v5.6a5.2 5.2 0 1 1-5.2-5.2c.3 0 .5 0 .8.1v2.7a2.6 2.6 0 1 0 1.8 2.4V3H14Z" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner glass">
+    <a class="brand" href="index.html" aria-label="Eco Reset, inicio">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" width="34" height="34" alt="">
+      <span class="brand__text">
+        <span class="brand__name">ECO RESET</span>
+        <span class="brand__sub">Orgánico foliar</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="index.html#marca">La idea</a>
+      <a href="index.html#producto">Producto</a>
+      <a href="index.html#sostenibilidad">Circular</a>
+      <a href="index.html#precios">Precios</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--sm btn--dark nav__cta" href="index.html">Volver al inicio</a>
+      <button class="nav__burger" type="button" data-menu-open aria-label="Abrir menú" aria-expanded="false">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu glass" id="menu" aria-hidden="true">
+  <div class="menu__top">
+    <span class="brand__name">ECO RESET</span>
+    <button class="menu__close" type="button" data-menu-close aria-label="Cerrar menú">
+      <svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <nav class="menu__links" aria-label="Menú móvil">
+    <a href="index.html#marca" data-menu-link><span>01</span> La idea</a>
+    <a href="index.html#producto" data-menu-link><span>02</span> Producto</a>
+    <a href="index.html#cuidado" data-menu-link><span>03</span> Scan &amp; Care</a>
+    <a href="index.html#sostenibilidad" data-menu-link><span>04</span> Circular</a>
+    <a href="index.html#precios" data-menu-link><span>05</span> Precios</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--dark" href="index.html#precios">Comprar Eco Reset</a>
+    <p class="menu__note">Hecho en Guatemala · 2026</p>
+  </div>
+</div>
+
+<main id="contenido">
+  <section class="care-hero">
+    <div class="container care-hero__grid">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Scan &amp; Care · Guía digital</p>
+        <h1 class="care-hero__title">Escanea. Pregunta. <em>Cuida mejor.</em></h1>
+        <p class="care-hero__lead">La etiqueta de Eco Reset incluye un código QR que te trae aquí: una guía para reconocer síntomas comunes, revisar las condiciones de tu cultivo y entender cuál es el siguiente paso. Sin tecnicismos, sin diagnósticos apresurados.</p>
+        <div class="care-hero__meta">
+          <span class="pill"><svg width="13" height="13" aria-hidden="true"><use href="#i-leaf"/></svg> 6 síntomas comunes</span>
+          <span class="pill"><svg width="13" height="13" aria-hidden="true"><use href="#i-drop"/></svg> 15 ml por litro</span>
+          <span class="pill"><svg width="13" height="13" aria-hidden="true"><use href="#i-qr"/></svg> Orientación preliminar</span>
+        </div>
+      </div>
+
+      <aside class="care-hero__card glass" data-reveal>
+        <p class="eyebrow">Tu mezcla, en tres pasos</p>
+        <h2>Una medida justa para tus hojas.</h2>
+        <ol class="care-hero__steps">
+          <li><span>01</span> Mide 15 ml de Eco Reset.</li>
+          <li><span>02</span> Diluye en 1 litro de agua.</li>
+          <li><span>03</span> Rocía sobre las hojas.</li>
+        </ol>
+        <p>Prepara solo lo que vas a usar y aplica temprano o al atardecer. Revisa siempre la etiqueta del producto.</p>
+        <a class="link-arrow" href="#calculadora">Calcular mi mezcla <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="care-tool" id="sintomas">
+    <div class="container care-tool__grid">
+      <aside class="care-tool__aside">
+        <p class="eyebrow"><span class="eyebrow__num">01</span> Diagnóstico guiado</p>
+        <h2 class="h2">¿Qué le pasa<br><em>a tu planta?</em></h2>
+        <p>Elige el síntoma que mejor describa lo que ves. La guía te mostrará posibles causas, qué revisar y una orientación general para actuar con calma.</p>
+        <p class="fineprint">Scan &amp; Care es una herramienta de orientación. No sustituye un diagnóstico profesional ni reemplaza las indicaciones de la etiqueta.</p>
+      </aside>
+
+      <div>
+        <div class="symptom-grid" role="group" aria-label="Elige un síntoma">
+          <button class="symptom-card is-active" type="button" data-care-symptom="amarillas" aria-pressed="true"><span>01</span><strong>Hojas amarillas</strong></button>
+          <button class="symptom-card" type="button" data-care-symptom="puntas"><span>02</span><strong>Puntas marrones</strong></button>
+          <button class="symptom-card" type="button" data-care-symptom="manchas"><span>03</span><strong>Manchas en hojas</strong></button>
+          <button class="symptom-card" type="button" data-care-symptom="enrolladas"><span>04</span><strong>Hojas enrolladas</strong></button>
+          <button class="symptom-card" type="button" data-care-symptom="lento"><span>05</span><strong>Crecimiento lento</strong></button>
+          <button class="symptom-card" type="button" data-care-symptom="plagas"><span>06</span><strong>Plagas visibles</strong></button>
+        </div>
+
+        <article class="care-detail glass" id="careDetail" aria-live="polite"></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="care-guide" id="calculadora">
+    <div class="container">
+      <div class="care-tool__grid">
+        <aside class="care-tool__aside">
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Aplicación</p>
+          <h2 class="h2">La dosis exacta,<br><em>sin adivinar</em>.</h2>
+          <p>La dilución recomendada es de <strong>15 ml por cada litro de agua</strong>. Ajusta el volumen al número de plantas y aplica con el atomizador sobre las hojas.</p>
+          <p class="fineprint">La composición final y las condiciones de uso se verificarán según la formulación definitiva del producto.</p>
+        </aside>
+
+        <div class="care-mix">
+          <div class="calc glass-dark">
+            <div class="calc__head">
+              <div>
+                <p class="calc__label">Calcula tu mezcla</p>
+                <p class="calc__sub">15 ml de Eco Reset por litro</p>
+              </div>
+              <span class="calc__icon"><svg width="20" height="20" aria-hidden="true"><use href="#i-drop"/></svg></span>
+            </div>
+            <label class="calc__control">
+              <span>Litros de agua <output id="calcLiters">1.0 L</output></span>
+              <input type="range" id="calcRange" min="0.5" max="5" step="0.5" value="1" aria-describedby="calcResult">
+            </label>
+            <div class="calc__result" id="calcResult" aria-live="polite">
+              <strong id="calcMl">15</strong><span>ml de Eco Reset</span>
+            </div>
+            <p class="calc__note">Aplica temprano o al atardecer. No mezcles con otros productos sin revisar antes la etiqueta.</p>
+          </div>
+
+          <div class="care-detail glass" style="border-radius:18px">
+            <p class="eyebrow">Tres pasos</p>
+            <ul class="care-hero__steps" style="margin-top:14px">
+              <li><span>01</span> Mide el producto con una jeringa o cuchara medidora.</li>
+              <li><span>02</span> Diluye en agua a temperatura ambiente y agita suavemente.</li>
+              <li><span>03</span> Rocía el envés y el haz de las hojas, sin encharcar.</li>
+            </ul>
+            <p class="care-detail__note">Guarda el sobrante en un lugar fresco y fuera del alcance de niños y mascotas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="care-cta">
+    <div class="container">
+      <img src="assets/img/logo-mark-light.svg" width="46" height="46" alt="" style="margin:0 auto 20px">
+      <h2>El cuidado empieza<br><em>con una buena pregunta.</em></h2>
+      <p>Si tu planta necesita nutrición, Eco Reset está pensado para acompañarla. Una botella de 1000 ml, un atomizador que se queda contigo y una guía siempre a mano.</p>
+      <a class="btn btn--cream" href="index.html#precios">Ver presentaciones <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer footer--slim">
+  <div class="container footer__slim">
+    <a class="brand brand--light" href="index.html" aria-label="Eco Reset, inicio">
+      <img class="brand__mark" src="assets/img/logo-mark-light.svg" width="36" height="36" alt="">
+      <span class="brand__text">
+        <span class="brand__name">ECO RESET</span>
+        <span class="brand__sub">Orgánico foliar</span>
+      </span>
+    </a>
+    <nav class="footer__slim-links" aria-label="Pie de página">
+      <a href="index.html#producto">Producto</a>
+      <a href="index.html#precios">Precios</a>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="mailto:hola@ecoreset.gt">hola@ecoreset.gt</a>
+    </nav>
+    <p class="footer__disclaimer">Orientación preliminar. Las imágenes y la información del producto corresponden a un prototipo de lanzamiento.</p>
+    <p class="footer__copy">© 2026 Eco Reset · Proyecto de marca</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

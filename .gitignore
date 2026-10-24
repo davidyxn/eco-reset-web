@@ -1,0 +1,9 @@
+node_modules/
+.pnpm-store/
+.browsers/
+.tmp/
+shots/
+_tools/
+_check/
+.gh/
+.DS_Store
