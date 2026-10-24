@@ -8,6 +8,8 @@ Presentación principal: **botella de 1000 ml** con concentrado y atomizador reu
 Contenido tomado del informe *“Informe – Borrador”* y de la lámina de marca incluida en él
 (logotipo, paleta y tipografías Montserrat + Poppins).
 
+**Demo en línea:** <https://davidyxn.github.io/eco-reset-web/>
+
 ---
 
 ## 1. Cómo verlo
